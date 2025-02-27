@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "online",
 	"version": "${version}",
-	"name": "Online",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Players online",
+	"description": "Get server online players",
 	"authors": [
-		"Me!"
+		"SergeyRogozhkin"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,19 +16,9 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.mod.Online"
-		],
-		"client": [
-			"com.mod.OnlineClient"
+			"com.mod.PlayersOnlineModInitializer"
 		]
 	},
-	"mixins": [
-		"online.mixins.json",
-		{
-			"config": "online.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21",
